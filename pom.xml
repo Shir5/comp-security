@@ -132,6 +132,7 @@
         <artifactId>dependency-check-maven</artifactId>
         <version>${owasp.depcheck.version}</version>
         <configuration>
+          <nvdApiKey>${env.NVD_API_KEY}</nvdApiKey>
           <failBuildOnCVSS>10</failBuildOnCVSS>
           <formats>HTML,JSON,XML</formats>
         </configuration>
