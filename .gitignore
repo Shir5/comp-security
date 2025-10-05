@@ -1,0 +1,30 @@
+/src/main/resources/application.properties
+
+# Maven
+/target/
+/.idea/
+/*.iml
+
+# Logs
+*.log
+/logs/
+/tmp/
+
+# OS
+.DS_Store
+
+# Environment
+.env
+*.env
+*.local
+*.properties.local
+/secrets/
+/config/application-*.yml
+
+# Token secrets and credentials
+src/main/resources/application.properties
+!src/main/resources/application-example.properties
+
+# Dependency-check reports
+**/dependency-check-report.*
+**/spotbugsXml.xml
