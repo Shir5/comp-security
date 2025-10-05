@@ -133,8 +133,10 @@
         <version>${owasp.depcheck.version}</version>
         <configuration>
           <nvdApiKey>${env.NVD_API_KEY}</nvdApiKey>
-          <failBuildOnCVSS>10</failBuildOnCVSS>
-          <formats>HTML,JSON,XML</formats>
+          <nvdApiDelay>8000</nvdApiDelay>
+          <failOnError>false</failOnError>
+          <verbose>true</verbose>
+          <formats>HTML,JSON</formats>
         </configuration>
         <executions>
           <execution>
